@@ -1,0 +1,9 @@
+	printf("%g\n", Constants.h_sub);
+	printf("%g\n", Constants.h_int);
+	printf("%g\n", Constants.h_film);
+	
+	printf("%g\n", z_axis[0]);
+	printf("%g\n", z_axis[Nz - 1]);
+
+	printf("%g\n", x_axis[0]);
+	printf("%g\n", x_axis[Nx - 1]);

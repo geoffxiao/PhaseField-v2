@@ -1,0 +1,573 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 30.00      0.27     0.27       20    13.50    15.26  CalcElasticEnergy
+ 23.33      0.48     0.21                             __muldc3
+ 13.33      0.60     0.12       20     6.00     6.00  CalcLandauEnergy
+  6.67      0.66     0.06                             n1_16
+  3.33      0.69     0.03      320     0.09     0.13  IFFT2_slices
+  2.22      0.71     0.02      380     0.05     0.05  IFFT3
+  2.22      0.73     0.02       20     1.00     1.53  TimeStep_1stOrd
+  2.22      0.75     0.02        1    20.00    20.00  ElasticSetup
+  2.22      0.77     0.02                             doblock
+  2.22      0.79     0.02                             htab_lookup
+  1.11      0.80     0.01     5120     0.00     0.00  IFFT2
+  1.11      0.81     0.01                             dlapy3_
+  1.11      0.82     0.01                             fftw_malloc_plain
+  1.11      0.83     0.01                             fftw_md5end
+  1.11      0.84     0.01                             fftw_md5putc
+  1.11      0.85     0.01                             fftw_mktensor
+  1.11      0.86     0.01                             fftw_next_prime
+  1.11      0.87     0.01                             fftw_ops_madd2
+  1.11      0.88     0.01                             htab_insert
+  1.11      0.89     0.01                             main
+  1.11      0.90     0.01                             zlahqr_
+  0.00      0.90     0.00     4096     0.00     0.00  InverseMat
+  0.00      0.90     0.00     3070     0.00     0.00  Convert2D_2_ColMajor_Complex
+  0.00      0.90     0.00     3049     0.00     0.00  Free_2D_mat_Complex
+  0.00      0.90     0.00     1089     0.00     0.00  Free_2D_mat
+  0.00      0.90     0.00      513     0.00     0.00  Convert2D_2_ColMajor_Double_2_Complex
+  0.00      0.90     0.00      512     0.00     0.00  InverseMat_Complex
+  0.00      0.90     0.00      511     0.00     0.00  Convert2D_2_ColMajor
+  0.00      0.90     0.00      280     0.00     0.00  FFT2
+  0.00      0.90     0.00      255     0.00     0.00  LU_Decomp_Complex
+  0.00      0.90     0.00      255     0.00     0.00  MatrixComplexEigensystem
+  0.00      0.90     0.00      243     0.00     0.00  FFT3
+  0.00      0.90     0.00      190     0.00     0.00  Free_3D_mat_Complex
+  0.00      0.90     0.00       70     0.00     0.00  Free_3D_mat
+  0.00      0.90     0.00       60     0.00     0.00  CalcError
+  0.00      0.90     0.00       22     0.00     0.00  InitPVector
+  0.00      0.90     0.00       20     0.00     0.00  CalcEigenstrain
+  0.00      0.90     0.00       20     0.00     0.71  CalcElecEnergy
+  0.00      0.90     0.00       20     0.00     0.00  HomoSolution
+  0.00      0.90     0.00       20     0.00     0.00  ParticularSolution
+  0.00      0.90     0.00       14     0.00     0.00  AllocLargeArray_3D_Complex
+  0.00      0.90     0.00       11     0.00     0.00  AllocLargeArray_4D_Complex
+  0.00      0.90     0.00       11     0.00     0.00  Free_4D_mat_Complex
+  0.00      0.90     0.00        9     0.00     0.00  AllocLargeArray_2D_Complex
+  0.00      0.90     0.00        8     0.00     0.00  AllocLargeArray_2D
+  0.00      0.90     0.00        5     0.00     0.00  AllocLargeArray_4D
+  0.00      0.90     0.00        5     0.00     0.00  Free_4D_mat
+  0.00      0.90     0.00        3     0.00     0.00  AllocLargeArray_3D
+  0.00      0.90     0.00        3     0.00     0.00  Convert3D_2_RowMajor
+  0.00      0.90     0.00        3     0.00     0.00  SaveFile_Complex
+  0.00      0.90     0.00        3     0.00     0.00  Setup_k_axis
+  0.00      0.90     0.00        2     0.00     0.00  Convert2D_2_RowMajor
+  0.00      0.90     0.00        2     0.00     0.00  FreePVector
+  0.00      0.90     0.00        2     0.00     0.00  coth
+  0.00      0.90     0.00        1     0.00     0.00  Convert3D_2_RowMajor_Complex
+  0.00      0.90     0.00        1     0.00     0.00  ElectricSetup
+  0.00      0.90     0.00        1     0.00     0.00  FreeEigenstrain
+  0.00      0.90     0.00        1     0.00     0.00  FreeElasticSolution
+  0.00      0.90     0.00        1     0.00     0.00  FreeElasticWorkspace
+  0.00      0.90     0.00        1     0.00     0.00  FreeElectricSolution
+  0.00      0.90     0.00        1     0.00     0.00  FreeElectricWorkspace
+  0.00      0.90     0.00        1     0.00     0.00  FreeEnergies
+  0.00      0.90     0.00        1     0.00     0.00  FreeSetup
+  0.00      0.90     0.00        1     0.00     0.00  FreeTimeSolution
+  0.00      0.90     0.00        1     0.00     0.00  FreeTotalState
+  0.00      0.90     0.00        1     0.00     0.00  InitEigenstrain
+  0.00      0.90     0.00        1     0.00     0.00  InitElasticWorkspace
+  0.00      0.90     0.00        1     0.00     0.00  InitElectricWorkspace
+  0.00      0.90     0.00        1     0.00     0.00  InitEnergies
+  0.00      0.90     0.00        1     0.00     0.00  InitSetup
+  0.00      0.90     0.00        1     0.00     0.00  InitTotalState
+  0.00      0.90     0.00        1     0.00     0.00  Meshgrid
+  0.00      0.90     0.00        1     0.00     0.00  TimeSetup
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 1.11% of 0.90 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     55.6    0.01    0.49                 main [1]
+                0.27    0.04      20/20          CalcElasticEnergy [2]
+                0.12    0.00      20/20          CalcLandauEnergy [4]
+                0.02    0.01      20/20          TimeStep_1stOrd [7]
+                0.02    0.00       1/1           ElasticSetup [9]
+                0.00    0.01      20/20          CalcElecEnergy [12]
+                0.00    0.00      60/243         FFT3 [33]
+                0.00    0.00      60/60          CalcError [36]
+                0.00    0.00      22/22          InitPVector [37]
+                0.00    0.00       3/3           SaveFile_Complex [50]
+                0.00    0.00       2/2           FreePVector [53]
+                0.00    0.00       1/1           InitSetup [70]
+                0.00    0.00       1/1           ElectricSetup [56]
+                0.00    0.00       1/1           TimeSetup [73]
+                0.00    0.00       1/1           InitElectricWorkspace [68]
+                0.00    0.00       1/1           InitElasticWorkspace [67]
+                0.00    0.00       1/1           InitTotalState [71]
+                0.00    0.00       1/1           InitEigenstrain [66]
+                0.00    0.00       1/1           InitEnergies [69]
+                0.00    0.00       1/1           FreeElasticSolution [58]
+                0.00    0.00       1/1           FreeElectricSolution [60]
+                0.00    0.00       1/1           FreeTimeSolution [64]
+                0.00    0.00       1/1           FreeEnergies [62]
+                0.00    0.00       1/1           FreeElectricWorkspace [61]
+                0.00    0.00       1/1           FreeElasticWorkspace [59]
+                0.00    0.00       1/1           FreeSetup [63]
+                0.00    0.00       1/1           FreeTotalState [65]
+                0.00    0.00       1/1           FreeEigenstrain [57]
+-----------------------------------------------
+                0.27    0.04      20/20          main [1]
+[2]     33.9    0.27    0.04      20         CalcElasticEnergy [2]
+                0.02    0.01     180/320         IFFT2_slices [6]
+                0.01    0.00     240/380         IFFT3 [8]
+                0.00    0.00     120/280         FFT2 [30]
+                0.00    0.00      20/20          CalcEigenstrain [38]
+-----------------------------------------------
+                                                 <spontaneous>
+[3]     23.3    0.21    0.00                 __muldc3 [3]
+-----------------------------------------------
+                0.12    0.00      20/20          main [1]
+[4]     13.3    0.12    0.00      20         CalcLandauEnergy [4]
+-----------------------------------------------
+                                                 <spontaneous>
+[5]      6.7    0.06    0.00                 n1_16 [5]
+-----------------------------------------------
+                0.01    0.00      60/320         TimeStep_1stOrd [7]
+                0.01    0.00      80/320         CalcElecEnergy [12]
+                0.02    0.01     180/320         CalcElasticEnergy [2]
+[6]      4.4    0.03    0.01     320         IFFT2_slices [6]
+                0.01    0.00    5120/5120        IFFT2 [13]
+-----------------------------------------------
+                0.02    0.01      20/20          main [1]
+[7]      3.4    0.02    0.01      20         TimeStep_1stOrd [7]
+                0.01    0.00      60/320         IFFT2_slices [6]
+                0.00    0.00      60/380         IFFT3 [8]
+                0.00    0.00     120/280         FFT2 [30]
+                0.00    0.00      60/243         FFT3 [33]
+-----------------------------------------------
+                0.00    0.00      60/380         TimeStep_1stOrd [7]
+                0.00    0.00      80/380         CalcElecEnergy [12]
+                0.01    0.00     240/380         CalcElasticEnergy [2]
+[8]      2.2    0.02    0.00     380         IFFT3 [8]
+-----------------------------------------------
+                0.02    0.00       1/1           main [1]
+[9]      2.2    0.02    0.00       1         ElasticSetup [9]
+                0.00    0.00    4096/4096        InverseMat [23]
+                0.00    0.00    1534/3070        Convert2D_2_ColMajor_Complex [24]
+                0.00    0.00     512/512         InverseMat_Complex [28]
+                0.00    0.00     511/511         Convert2D_2_ColMajor [29]
+                0.00    0.00     256/513         Convert2D_2_ColMajor_Double_2_Complex [27]
+                0.00    0.00     255/255         MatrixComplexEigensystem [32]
+                0.00    0.00     255/255         LU_Decomp_Complex [31]
+                0.00    0.00       6/14          AllocLargeArray_3D_Complex [41]
+                0.00    0.00       5/11          AllocLargeArray_4D_Complex [42]
+                0.00    0.00       3/9           AllocLargeArray_2D_Complex [44]
+                0.00    0.00       3/8           AllocLargeArray_2D [45]
+                0.00    0.00       3/1089        Free_2D_mat [26]
+                0.00    0.00       3/3049        Free_2D_mat_Complex [25]
+                0.00    0.00       3/11          Free_4D_mat_Complex [43]
+                0.00    0.00       2/5           AllocLargeArray_4D [46]
+                0.00    0.00       1/5           Free_4D_mat [47]
+-----------------------------------------------
+                                                 <spontaneous>
+[10]     2.2    0.02    0.00                 doblock [10]
+-----------------------------------------------
+                                                 <spontaneous>
+[11]     2.2    0.02    0.00                 htab_lookup [11]
+-----------------------------------------------
+                0.00    0.01      20/20          main [1]
+[12]     1.6    0.00    0.01      20         CalcElecEnergy [12]
+                0.01    0.00      80/320         IFFT2_slices [6]
+                0.00    0.00      80/380         IFFT3 [8]
+                0.00    0.00      40/280         FFT2 [30]
+                0.00    0.00      20/20          ParticularSolution [40]
+                0.00    0.00      20/20          HomoSolution [39]
+-----------------------------------------------
+                0.01    0.00    5120/5120        IFFT2_slices [6]
+[13]     1.1    0.01    0.00    5120         IFFT2 [13]
+-----------------------------------------------
+                                                 <spontaneous>
+[14]     1.1    0.01    0.00                 dlapy3_ [14]
+-----------------------------------------------
+                                                 <spontaneous>
+[15]     1.1    0.01    0.00                 fftw_malloc_plain [15]
+-----------------------------------------------
+                                                 <spontaneous>
+[16]     1.1    0.01    0.00                 fftw_md5end [16]
+-----------------------------------------------
+                                                 <spontaneous>
+[17]     1.1    0.01    0.00                 fftw_md5putc [17]
+-----------------------------------------------
+                                                 <spontaneous>
+[18]     1.1    0.01    0.00                 fftw_mktensor [18]
+-----------------------------------------------
+                                                 <spontaneous>
+[19]     1.1    0.01    0.00                 fftw_next_prime [19]
+-----------------------------------------------
+                                                 <spontaneous>
+[20]     1.1    0.01    0.00                 fftw_ops_madd2 [20]
+-----------------------------------------------
+                                                 <spontaneous>
+[21]     1.1    0.01    0.00                 htab_insert [21]
+-----------------------------------------------
+                                                 <spontaneous>
+[22]     1.1    0.01    0.00                 zlahqr_ [22]
+-----------------------------------------------
+                0.00    0.00    4096/4096        ElasticSetup [9]
+[23]     0.0    0.00    0.00    4096         InverseMat [23]
+-----------------------------------------------
+                0.00    0.00    1534/3070        ElasticSetup [9]
+                0.00    0.00    1536/3070        TimeSetup [73]
+[24]     0.0    0.00    0.00    3070         Convert2D_2_ColMajor_Complex [24]
+-----------------------------------------------
+                0.00    0.00       3/3049        ElasticSetup [9]
+                0.00    0.00       6/3049        FreeTimeSolution [64]
+                0.00    0.00    3040/3049        Free_3D_mat_Complex [34]
+[25]     0.0    0.00    0.00    3049         Free_2D_mat_Complex [25]
+-----------------------------------------------
+                0.00    0.00       1/1089        FreeElectricSolution [60]
+                0.00    0.00       2/1089        FreeSetup [63]
+                0.00    0.00       2/1089        ElectricSetup [56]
+                0.00    0.00       3/1089        ElasticSetup [9]
+                0.00    0.00    1081/1089        Free_3D_mat [35]
+[26]     0.0    0.00    0.00    1089         Free_2D_mat [26]
+-----------------------------------------------
+                0.00    0.00     256/513         ElasticSetup [9]
+                0.00    0.00     257/513         ElectricSetup [56]
+[27]     0.0    0.00    0.00     513         Convert2D_2_ColMajor_Double_2_Complex [27]
+-----------------------------------------------
+                0.00    0.00     512/512         ElasticSetup [9]
+[28]     0.0    0.00    0.00     512         InverseMat_Complex [28]
+-----------------------------------------------
+                0.00    0.00     511/511         ElasticSetup [9]
+[29]     0.0    0.00    0.00     511         Convert2D_2_ColMajor [29]
+-----------------------------------------------
+                0.00    0.00      40/280         CalcElecEnergy [12]
+                0.00    0.00     120/280         TimeStep_1stOrd [7]
+                0.00    0.00     120/280         CalcElasticEnergy [2]
+[30]     0.0    0.00    0.00     280         FFT2 [30]
+-----------------------------------------------
+                0.00    0.00     255/255         ElasticSetup [9]
+[31]     0.0    0.00    0.00     255         LU_Decomp_Complex [31]
+-----------------------------------------------
+                0.00    0.00     255/255         ElasticSetup [9]
+[32]     0.0    0.00    0.00     255         MatrixComplexEigensystem [32]
+-----------------------------------------------
+                0.00    0.00       3/243         InitPVector [37]
+                0.00    0.00      60/243         main [1]
+                0.00    0.00      60/243         TimeStep_1stOrd [7]
+                0.00    0.00     120/243         CalcEigenstrain [38]
+[33]     0.0    0.00    0.00     243         FFT3 [33]
+-----------------------------------------------
+                0.00    0.00       1/190         InitSetup [70]
+                0.00    0.00       1/190         FreeElectricSolution [60]
+                0.00    0.00       6/190         FreeElasticSolution [58]
+                0.00    0.00       6/190         FreeTimeSolution [64]
+                0.00    0.00     176/190         Free_4D_mat_Complex [43]
+[34]     0.0    0.00    0.00     190         Free_3D_mat_Complex [34]
+                0.00    0.00    3040/3049        Free_2D_mat_Complex [25]
+-----------------------------------------------
+                0.00    0.00       3/70          InitSetup [70]
+                0.00    0.00      67/70          Free_4D_mat [47]
+[35]     0.0    0.00    0.00      70         Free_3D_mat [35]
+                0.00    0.00    1081/1089        Free_2D_mat [26]
+-----------------------------------------------
+                0.00    0.00      60/60          main [1]
+[36]     0.0    0.00    0.00      60         CalcError [36]
+-----------------------------------------------
+                0.00    0.00      22/22          main [1]
+[37]     0.0    0.00    0.00      22         InitPVector [37]
+                0.00    0.00       3/243         FFT3 [33]
+-----------------------------------------------
+                0.00    0.00      20/20          CalcElasticEnergy [2]
+[38]     0.0    0.00    0.00      20         CalcEigenstrain [38]
+                0.00    0.00     120/243         FFT3 [33]
+-----------------------------------------------
+                0.00    0.00      20/20          CalcElecEnergy [12]
+[39]     0.0    0.00    0.00      20         HomoSolution [39]
+-----------------------------------------------
+                0.00    0.00      20/20          CalcElecEnergy [12]
+[40]     0.0    0.00    0.00      20         ParticularSolution [40]
+-----------------------------------------------
+                0.00    0.00       1/14          InitSetup [70]
+                0.00    0.00       1/14          ElectricSetup [56]
+                0.00    0.00       6/14          ElasticSetup [9]
+                0.00    0.00       6/14          TimeSetup [73]
+[41]     0.0    0.00    0.00      14         AllocLargeArray_3D_Complex [41]
+-----------------------------------------------
+                0.00    0.00       5/11          ElasticSetup [9]
+                0.00    0.00       6/11          TimeSetup [73]
+[42]     0.0    0.00    0.00      11         AllocLargeArray_4D_Complex [42]
+-----------------------------------------------
+                0.00    0.00       2/11          FreeElasticSolution [58]
+                0.00    0.00       3/11          ElasticSetup [9]
+                0.00    0.00       6/11          TimeSetup [73]
+[43]     0.0    0.00    0.00      11         Free_4D_mat_Complex [43]
+                0.00    0.00     176/190         Free_3D_mat_Complex [34]
+-----------------------------------------------
+                0.00    0.00       3/9           ElasticSetup [9]
+                0.00    0.00       6/9           TimeSetup [73]
+[44]     0.0    0.00    0.00       9         AllocLargeArray_2D_Complex [44]
+-----------------------------------------------
+                0.00    0.00       2/8           InitSetup [70]
+                0.00    0.00       3/8           ElasticSetup [9]
+                0.00    0.00       3/8           ElectricSetup [56]
+[45]     0.0    0.00    0.00       8         AllocLargeArray_2D [45]
+-----------------------------------------------
+                0.00    0.00       1/5           InitSetup [70]
+                0.00    0.00       2/5           ElasticSetup [9]
+                0.00    0.00       2/5           ElectricSetup [56]
+[46]     0.0    0.00    0.00       5         AllocLargeArray_4D [46]
+-----------------------------------------------
+                0.00    0.00       1/5           FreeSetup [63]
+                0.00    0.00       1/5           ElasticSetup [9]
+                0.00    0.00       1/5           FreeElasticSolution [58]
+                0.00    0.00       2/5           ElectricSetup [56]
+[47]     0.0    0.00    0.00       5         Free_4D_mat [47]
+                0.00    0.00      67/70          Free_3D_mat [35]
+-----------------------------------------------
+                0.00    0.00       3/3           InitSetup [70]
+[48]     0.0    0.00    0.00       3         AllocLargeArray_3D [48]
+-----------------------------------------------
+                0.00    0.00       3/3           InitSetup [70]
+[49]     0.0    0.00    0.00       3         Convert3D_2_RowMajor [49]
+-----------------------------------------------
+                0.00    0.00       3/3           main [1]
+[50]     0.0    0.00    0.00       3         SaveFile_Complex [50]
+-----------------------------------------------
+                0.00    0.00       3/3           InitSetup [70]
+[51]     0.0    0.00    0.00       3         Setup_k_axis [51]
+-----------------------------------------------
+                0.00    0.00       2/2           InitSetup [70]
+[52]     0.0    0.00    0.00       2         Convert2D_2_RowMajor [52]
+-----------------------------------------------
+                0.00    0.00       2/2           main [1]
+[53]     0.0    0.00    0.00       2         FreePVector [53]
+-----------------------------------------------
+                0.00    0.00       2/2           InitSetup [70]
+[54]     0.0    0.00    0.00       2         coth [54]
+-----------------------------------------------
+                0.00    0.00       1/1           InitSetup [70]
+[55]     0.0    0.00    0.00       1         Convert3D_2_RowMajor_Complex [55]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[56]     0.0    0.00    0.00       1         ElectricSetup [56]
+                0.00    0.00     257/513         Convert2D_2_ColMajor_Double_2_Complex [27]
+                0.00    0.00       3/8           AllocLargeArray_2D [45]
+                0.00    0.00       2/5           AllocLargeArray_4D [46]
+                0.00    0.00       2/1089        Free_2D_mat [26]
+                0.00    0.00       2/5           Free_4D_mat [47]
+                0.00    0.00       1/14          AllocLargeArray_3D_Complex [41]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[57]     0.0    0.00    0.00       1         FreeEigenstrain [57]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[58]     0.0    0.00    0.00       1         FreeElasticSolution [58]
+                0.00    0.00       6/190         Free_3D_mat_Complex [34]
+                0.00    0.00       2/11          Free_4D_mat_Complex [43]
+                0.00    0.00       1/5           Free_4D_mat [47]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[59]     0.0    0.00    0.00       1         FreeElasticWorkspace [59]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[60]     0.0    0.00    0.00       1         FreeElectricSolution [60]
+                0.00    0.00       1/190         Free_3D_mat_Complex [34]
+                0.00    0.00       1/1089        Free_2D_mat [26]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[61]     0.0    0.00    0.00       1         FreeElectricWorkspace [61]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[62]     0.0    0.00    0.00       1         FreeEnergies [62]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[63]     0.0    0.00    0.00       1         FreeSetup [63]
+                0.00    0.00       2/1089        Free_2D_mat [26]
+                0.00    0.00       1/5           Free_4D_mat [47]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[64]     0.0    0.00    0.00       1         FreeTimeSolution [64]
+                0.00    0.00       6/3049        Free_2D_mat_Complex [25]
+                0.00    0.00       6/190         Free_3D_mat_Complex [34]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[65]     0.0    0.00    0.00       1         FreeTotalState [65]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[66]     0.0    0.00    0.00       1         InitEigenstrain [66]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[67]     0.0    0.00    0.00       1         InitElasticWorkspace [67]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[68]     0.0    0.00    0.00       1         InitElectricWorkspace [68]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[69]     0.0    0.00    0.00       1         InitEnergies [69]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[70]     0.0    0.00    0.00       1         InitSetup [70]
+                0.00    0.00       3/3           Setup_k_axis [51]
+                0.00    0.00       3/3           AllocLargeArray_3D [48]
+                0.00    0.00       3/3           Convert3D_2_RowMajor [49]
+                0.00    0.00       3/70          Free_3D_mat [35]
+                0.00    0.00       2/2           coth [54]
+                0.00    0.00       2/8           AllocLargeArray_2D [45]
+                0.00    0.00       2/2           Convert2D_2_RowMajor [52]
+                0.00    0.00       1/1           Meshgrid [72]
+                0.00    0.00       1/14          AllocLargeArray_3D_Complex [41]
+                0.00    0.00       1/1           Convert3D_2_RowMajor_Complex [55]
+                0.00    0.00       1/190         Free_3D_mat_Complex [34]
+                0.00    0.00       1/5           AllocLargeArray_4D [46]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[71]     0.0    0.00    0.00       1         InitTotalState [71]
+-----------------------------------------------
+                0.00    0.00       1/1           InitSetup [70]
+[72]     0.0    0.00    0.00       1         Meshgrid [72]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[73]     0.0    0.00    0.00       1         TimeSetup [73]
+                0.00    0.00    1536/3070        Convert2D_2_ColMajor_Complex [24]
+                0.00    0.00       6/9           AllocLargeArray_2D_Complex [44]
+                0.00    0.00       6/11          AllocLargeArray_4D_Complex [42]
+                0.00    0.00       6/14          AllocLargeArray_3D_Complex [41]
+                0.00    0.00       6/11          Free_4D_mat_Complex [43]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [45] AllocLargeArray_2D     [61] FreeElectricWorkspace  [31] LU_Decomp_Complex
+  [44] AllocLargeArray_2D_Complex [62] FreeEnergies       [32] MatrixComplexEigensystem
+  [48] AllocLargeArray_3D     [53] FreePVector            [72] Meshgrid
+  [41] AllocLargeArray_3D_Complex [63] FreeSetup          [40] ParticularSolution
+  [46] AllocLargeArray_4D     [64] FreeTimeSolution       [50] SaveFile_Complex
+  [42] AllocLargeArray_4D_Complex [65] FreeTotalState     [51] Setup_k_axis
+  [38] CalcEigenstrain        [26] Free_2D_mat            [73] TimeSetup
+   [2] CalcElasticEnergy      [25] Free_2D_mat_Complex     [7] TimeStep_1stOrd
+  [12] CalcElecEnergy         [35] Free_3D_mat             [3] __muldc3
+  [36] CalcError              [34] Free_3D_mat_Complex    [54] coth
+   [4] CalcLandauEnergy       [47] Free_4D_mat            [14] dlapy3_
+  [29] Convert2D_2_ColMajor   [43] Free_4D_mat_Complex    [10] doblock
+  [24] Convert2D_2_ColMajor_Complex [39] HomoSolution     [15] fftw_malloc_plain
+  [27] Convert2D_2_ColMajor_Double_2_Complex [13] IFFT2   [16] fftw_md5end
+  [52] Convert2D_2_RowMajor    [6] IFFT2_slices           [17] fftw_md5putc
+  [49] Convert3D_2_RowMajor    [8] IFFT3                  [18] fftw_mktensor
+  [55] Convert3D_2_RowMajor_Complex [66] InitEigenstrain  [19] fftw_next_prime
+   [9] ElasticSetup           [67] InitElasticWorkspace   [20] fftw_ops_madd2
+  [56] ElectricSetup          [68] InitElectricWorkspace  [21] htab_insert
+  [30] FFT2                   [69] InitEnergies           [11] htab_lookup
+  [33] FFT3                   [37] InitPVector             [1] main
+  [57] FreeEigenstrain        [70] InitSetup               [5] n1_16
+  [58] FreeElasticSolution    [71] InitTotalState         [22] zlahqr_
+  [59] FreeElasticWorkspace   [23] InverseMat
+  [60] FreeElectricSolution   [28] InverseMat_Complex
